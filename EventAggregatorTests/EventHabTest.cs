@@ -66,7 +66,7 @@ namespace EventAggregatorTests
 
 
             // assert
-            Assert.AreEqual(true, subscriber1Triggered);
+            Assert.AreEqual(false, subscriber1Triggered);
             Assert.AreEqual(publishThreadId, subscribedThreadId);
             Assert.AreNotEqual(publishThreadId, subscriberThreadId);
         }
